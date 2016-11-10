@@ -1,0 +1,10 @@
+all: xmatej52.pdf
+
+xmatej52.pdf: xmatej52.tex
+	pdflatex xmatej52.tex && pdflatex xmatej52.tex
+
+.PHONY: clean zip
+clean:
+	rm -f xmatej52.pdf xmatej52.log xmatej52.aux xmatej52.toc xmatej52.out xmatej52.snm xmatej52.nav
+zip:
+	zip xmatej52.zip xmatej52.tex Makefile

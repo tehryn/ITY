@@ -1,0 +1,116 @@
+%2/2 monografie (alespoň jedna musí být cizojazyčná),
+%3/3 elektronické dokumenty (online),
+%1/1 seriálovou publikaci (tištěný časopis či sborník z konference),
+%2/2 články v seriálové publikaci (pokud možno zahraniční tištěné články),
+%2/2 kvalifikační práce (bakalářské, diplomové nebo disertační).
+\documentclass[11pt,a4paper,titlepage]{article}
+\usepackage[left=2cm,text={17cm, 24cm},top=3cm]{geometry}
+\usepackage{times}
+\usepackage[czech]{babel}
+\usepackage[utf8]{inputenc}
+\bibliographystyle{czplain}
+\usepackage{etoolbox}
+\apptocmd{\thebibliography}{\raggedright}{}{}
+%\usepackage{hyperref}
+%\usepackage[hyphenbreaks]{breakurl}
+
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%FRONTPAGE%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\thispagestyle{empty}
+\begin{center}
+
+\textsc{
+\Huge{Vysoké učení technické v~Brně \\}
+\huge{Fakulta informačních technologií\\}
+}
+\vspace{\stretch{0.382}}
+
+
+\LARGE{Typografie a publikování -- 4. projekt \\}
+\Huge{Bibliografické citace\\}
+\vspace{\stretch{0.618}}
+
+\end{center}
+
+\Large{\today} \hfill Jiří Matějka
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\setcounter{page}{1}
+\section{\LaTeX}
+\subsection{Co to je \LaTeX ?} 
+Velice stručně můžeme říct, že
+%https://books.google.cz/books?id=BTPgB6dzhG4C&printsec=frontcover&dq=Latex&hl=cs&sa=X&redir_esc=y#v=onepage&q=Latex&f=false
+\LaTeX je komplexní sada příkazů používaných s~velice užitečným sázecím programem Tex pro přípravu nejrůznějších dokumentů.
+\cite{book:guide-to-latex}
+Ovšem toto je velice stručná definice a zdaleka nevystihuje všechny významy
+ani užití tohoto mocného a velice často užívaného nástroje.
+\LaTeX se užívá zejména pro psaní odborných článků, kvalifikačních prací, reportáží a v~mnoha dalších oblastech.
+Oproti Tex je značně jednodušší, a proto patří mezi nejvhodnější nástroje ve~své
+oblasti a to nejen díky své jednoduchosti, ale i proto, že je, stejně jako Tex,
+zdarma k~užití.
+% 4 vety
+
+\subsection{Proč používat \LaTeX ?}
+%http://www.latextemplates.com/why-use-latex
+Jednoduše můžeme říct, že dokumenty vytvořené pomocí \LaTeX u vypadají prostě lépe.
+Navíc \LaTeX~je zdarma a multiplatformní, tedy i lehce přenositelný. Další výhodou je, že Tex
+soubor je pouhý zdrojový kód, tedy jednoduchý text a může být upraven v~každém
+textovém editoru.\cite{web:why-use-latex}
+%7 vet
+
+\subsection{Libre office nebo \LaTeX ?}
+%http://mappingignorance.org/2015/04/06/word-or-latex-typesetting-which-one-is-more-productive-finally-scientifically-assessed/
+Výběr vhodného "nástroje" záleží na velikosti dokumentu. Při psaní krátkých textů
+bude vhodnější sada Microsoft office, Libre office a další podobné nástroje. Ale jak délka
+dokumentu roste, budete muset vynaložit větší a větší úsilí na formátování textu
+a celkového vzhledu dokumentu, kdeždo při použití \LaTeX u si nadefinujete formát
+stránky, písma, vlastní příkazy a ty můžete použít v~celém dokumentu.\cite{web:LibreOfficevsLatex}
+% 9 vet
+
+\subsection{Nevýhody při používání \LaTeX u}
+%http://merlin.fit.vutbr.cz/wiki/index.php/LaTeX#.22Nev.C3.BDhody.22_syst.C3.A9mu_LaTeX
+Není úplně jednoduché se \LaTeX~naučit a osvojit si ho zabere určitý čas.
+Navíc při samotném zpracování dokumentu není do jeho překladu vidět výsledek práce.
+A~v~neposlední řadě je potřeba mít nainstalované určité nástroje, hlavně při použití
+české diakritiky.\cite{web:nevyhody-latex}
+%12 vet
+
+\newpage
+\section{Operační systémy}
+\subsection{Mikrojádro}
+%https://www.vutbr.cz/studium/zaverecne-prace?action=detail&zp_id=15049&fid=20042&rok=&typ=&jazyk=cs&text=linux&hl_klic_slova=1&hl_abstrakt=0&hl_nazev=1&hl_autor=0&str=1 strana 8 dole
+Mikrojádro je takové jádro operačního systému, které obsahuje pouze nezbytně nutné
+služby operačního systému. Nezbytně nutné se rozumí takové, které jsou potřeba pro
+"komunikaci" operačního systému s~hardwarem (správa procesů, správa paměti 
+a~funkce pro synchronizaci a komunikaci).\cite{bc:mikrojadra}
+%14 vet
+
+%https://books.google.cz/books?id=wOJjBAAAQBAJ&pg=PA37&lpg=PA37&dq=issue+magazine+kernel+process+management&source=bl&ots=Kfz778RDp6&sig=GqHCecZI9J8FrKjO0mDnO43J9pk&hl=cs&sa=X&ved=0ahUKEwjszanS-YPMAhXjFZoKHaB1B0UQ6AEIOTAE#v=onepage&q=issue%20magazine%20kernel%20process%20management&f=false strana 37
+\subsection{Správa procesů a jejich přístupu k~CPU}
+V~dnešní době mají počítače jeden a více procesorů, avšak každý procesor dovede
+ve~skutečnosti pracovat pouze s~jedním procesem, přestože jich zvládá obsluhovat
+více. Ve~skutečnosti tedy obsluhuje v~jednu chvíli jeden proces po určitou dobu
+a poté obsluhuje jiný a neustále se přepíná mezi přidělenými procesy. Zatímco
+se procesor věnuje jednomu procesu, ostatní procesy spí.\cite{article:memory-management}
+%17 vet
+
+%https://www.vutbr.cz/www_base/zav_prace_soubor_verejne.php?file_id=115831 strana 12
+\subsection{Správa paměti}
+Paměť patří mezi nejdůležitější prvky počítače a má veliký vliv na výkonnost
+celého stroje, proto správa paměti musí být co nejefektivněji a~zároveň co nejbezpečněji
+implementována. Musí být efektivně rozdělována mezi uživatele, procesy
+a pro samotné jádro operačního systému a musí být prováděna i dealokace paměti
+v~každou chvíli, kdy je to vhodné a bezpečné.\cite{bc:linux-pamet}
+%19 vet
+
+\subsubsection{Problémy spojené se správou pamětí}
+V~dnešní době multiprocesingu, kdy je spuštěno poměrně velké množství procesů,
+je správa paměti poměrně problematická, zejména ve~sdílených částech pamět, kde
+si můžou poměrně jednoduše procesy navzájem přepisovat paměť a~tak značně měnit
+své chování.
+%20
+
+\newpage
+\bibliography{xmatej52}
+\end{document}

@@ -1,0 +1,63 @@
+@Book{book:guide-to-latex,
+author = {Kopka, Helmut and Daly, Patrick W.},
+title = {A Guide to LATEX},
+publisher = {Pearson Education},
+year = {2003},
+edition = {4},
+address = {Boston},
+isbn = {0321617746},
+}
+
+@Misc{web:why-use-latex,
+author = {latextemplates.com},
+title = {Why use LaTeX?},
+howpublished = {online},
+revised = {Poslední změna 2016},
+cited = {!2016-04-10},
+url = {http://www.latextemplates.com/why-use-latex},
+}
+
+@Misc{web:LibreOfficevsLatex,
+author = {Blanco, José},
+title = {Word or LaTeX typesetting: which one is more productive? Finally, scientifically assessed},
+howpublished = {online},
+revised = {Poslední změna 6. dubna 2015},
+cited = {!2016-04-10},
+url = {http://mappingignorance.org/2015/04/06/word-or-latex-\allowbreak typesetting-which-one-is-more-productive-finally-\allowbreak scientifically-assessed/},
+}
+
+@Misc{web:nevyhody-latex,
+author = {Wiki@Merlin},
+title = {LaTeX},
+howpublished = {online},
+revised = {Poslední změna 6. března 2006},
+cited = {!2016-04-10},
+url = {http://merlin.fit.vutbr.cz/wiki/index.php/LaTeX\#.22\allowbreak Nev.C3.BDhody.22\_syst.C3.A9mu\_LaTeX},
+}
+
+@BachelorThesis{bc:mikrojadra,
+author = {Beneš, Eduart},
+title = {Mikrojádra operačních systémů},
+school = {VUT FIT v~Brně},
+address = {Brno, Česká republika},
+year = {2007},
+}
+
+@BachelorThesis{bc:linux-pamet,
+author = {Tuček, Jaroslav},
+title = {Správa paměti v Linuxu},
+school = {VUT FIT v Brně},
+address = {Brno, Česká republika},
+year = {2007},
+}
+
+@Article{article:memory-management,
+author = {Tucker, Ronnie},
+title = {Full Circle Magazine \#88: THE INDEPENDENT MAGAZINE FOR THE UBUNTU LINUX COMMUNITY},
+journal = {Full Circle Magazine},
+year = {2014},
+number = {88},
+pages = {36--
+}
+
+
